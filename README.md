@@ -10,3 +10,10 @@ If the comment was created by the teacher it will just be a comment ex. // This 
 
 # Courses Covered
 ultimate-front-end-frameworks-web-development
+
+
+#Angular
+-Packages Installed-
+angular
+angular-resource (allow angular to use to connect to REST API on the server side.)
+angular-route (This is an angular Router)

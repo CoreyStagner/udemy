@@ -11,10 +11,10 @@ If the comment was created by the teacher it will just be a comment ex. // This 
 # Courses Covered
 ultimate-front-end-frameworks-web-development
 
-# Backbone
+# Backbone.js
 
 
-# Angular
+# Angular.js
 
 used Bower to install
 
@@ -22,3 +22,17 @@ used Bower to install
 angular
 angular-resource (allow angular to use to connect to REST API on the server side.)
 angular-route (This is an angular Router)
+
+# React.js
+
+used Bower to install 
+
+-Packages Installed-
+react
+backbone
+react-router
+
+Not a complete solution. As how most are a full MVC or MV* and maybe some routers, but React is only a View component.
+
+Since React does not have a model to interface with our REST API on the back end, we are free to use however we want.
+In this example I am going to use the Model component from backbone.

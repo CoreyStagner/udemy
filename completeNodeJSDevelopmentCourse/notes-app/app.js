@@ -37,39 +37,39 @@ Notes.log.command(command);
 var title = argv.title;
 var body = argv.body;
 
-switch (command) {
-    case 'add':
-        var note = Notes.addNote(title, body);
-        if (note) {
-            Notes.log.noteCreated(title);
-        } else {
-            Notes.log.noteFailed(title);
-        }
-        break;
-};// end switch()
+// switch (command) {
+//     case 'add':
+//         var note = Notes.addNote(title, body);
+//         if (note) {
+//             Notes.log.noteCreated(title);
+//         } else {
+//             Notes.log.noteFailed(title);
+//         }
+//         break;
+// };// end switch()
 
 // // Determine what command was called
-// if (command === 'add') {
-//     var note = Notes.addNote(title, body);
-//     if (note) {
-//         Notes.log.noteCreated(note)
-//     } else {
-//         Notes.log.noteFailed(title);
-//     };// end if/else()
-// } else if (command === 'read') {
-//     var note = Notes.readNote(title);
-//     if (note) {
-//         Notes.log.note(note)
-//     } else {
-//         Notes.log.noteNotFound(title);
-//     };// end if/else()
-// } else if (command === 'remove') {
-//     var noteRemoved = Notes.deleteNote(title);
-//     var message = noteRemoved ? Notes.log.delete(title) : Notes.log.noDelete(title);
-// } else if (command === 'list') {
-//     var allNotes = Notes.readAll();
-//     allNotes.forEach((note) => Notes.log.note(note));
-// } else {
-//     Notes.log.commandErr();
-// };// end if/else(command)
+if (command === 'add') {
+    var note = Notes.addNote(title, body);
+    if (note) {
+        Notes.log.noteCreated(note)
+    } else {
+        Notes.log.noteFailed(title);
+    };// end if/else()
+} else if (command === 'read') {
+    var note = Notes.readNote(title);
+    if (note) {
+        Notes.log.note(note)
+    } else {
+        Notes.log.noteNotFound(title);
+    };// end if/else()
+} else if (command === 'remove') {
+    var noteRemoved = Notes.deleteNote(title);
+    var message = noteRemoved ? Notes.log.delete(title) : Notes.log.noDelete(title);
+} else if (command === 'list') {
+    var allNotes = Notes.readAll();
+    allNotes.forEach((note) => Notes.log.note(note));
+} else {
+    Notes.log.commandErr();
+};// end if/else(command)
 

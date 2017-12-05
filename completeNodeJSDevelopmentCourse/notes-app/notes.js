@@ -17,16 +17,15 @@ var saveNotes = (notes) => {
 
 var addNote = (title, body) => {
     // Sanity Check
-    console.log("title", title);
-    console.log("body", body);
+    // console.log("title", title);
+    // console.log("body", body);
     if (title && body != undefined) {
-        console.log('else');
+        // console.log('else');
         var newNote = {
             title,
             body
         };
     } else {
-        console.log("WTF");
         return
     }
 

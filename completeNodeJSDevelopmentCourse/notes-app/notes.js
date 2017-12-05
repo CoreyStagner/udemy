@@ -1,5 +1,3 @@
-console.log('Opened note.js');
-
 const fs = require('fs');
 
 var fetchNotes = () => {
@@ -105,7 +103,7 @@ var log = {
         console.log('Command:', command.toUpperCase());
     },
     commandErr: function () {
-        console.log(`Command was recognized. Run --help if you need more assistance.`)
+        console.log(`Command was not recognized. Run --help if you need more assistance.`)
     }
 }
 
